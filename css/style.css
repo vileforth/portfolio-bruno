@@ -1,0 +1,197 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #818181; /* Fundo da tela cinza claro */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o conteúdo ocupe a altura inteira da tela */
+  color: white;
+}
+
+.container {
+  display: flex; /* Flex container para o layout */
+  flex: 1; /* Faz o container crescer para preencher o espaço disponível */
+}
+
+header {
+  width: 200px; /* Largura do menu lateral */
+  display: flex;
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+nav {
+  width: 100%; /* Faz o nav ocupar toda a largura do header */
+  padding: 20px;
+  background-color: rgb(65, 65, 65); /* Cor de fundo azul navy */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-bottom: 10px; /* Espaço entre os itens */
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px; /* Arredondamento dos botões */
+}
+
+nav ul li a:hover {
+  background-color: rgb(200, 200, 200); /* Cor de hover dos botões */
+  color: black;
+}
+
+main {
+  padding: 20px;
+  flex-grow: 1; /* Expande o main para ocupar o restante do espaço */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  color: white;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+.foto {
+  display: block;
+  margin: auto;
+  width: 300px;
+  padding: 20px;
+}
+
+p {
+  text-align: center;
+}
+
+.caixa {
+  background-color: rgb(65, 65, 65);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 80px;
+  box-shadow: 0 2px 8px black;
+  text-align: center;
+  color: white;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 80px; /* Espaço entre as imagens */
+}
+
+.thumbnail-container {
+  text-align: center; /* Centraliza o título e a imagem */
+}
+
+.thumbnail {
+  margin-top: 10px; /* Espaço entre o título e a imagem */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px; /* Largura da thumbnail */
+  height: 250px; /* Altura da thumbnail */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  margin-bottom: 40px;
+}
+
+.thumbnail img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.caixa ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.caixa ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.caixa ul li:last-child {
+  border-bottom: none;
+}
+
+#contatoDesc {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
